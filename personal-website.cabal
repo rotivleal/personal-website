@@ -33,7 +33,12 @@ library
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.16.1.0, mtl, directory, lens, pandoc
+    build-depends:    
+        base ^>=4.16.1.0, 
+        mtl, 
+        directory, 
+        lens, 
+        pandoc
     hs-source-dirs:   src
     default-language: Haskell2010
 
@@ -47,7 +52,8 @@ executable personal-website
     -- other-extensions:
     build-depends:
         base ^>=4.16.1.0,
-        personal-website
+        personal-website,
+        mtl
 
     hs-source-dirs:   app
     default-language: Haskell2010
